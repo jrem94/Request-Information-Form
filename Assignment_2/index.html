@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Request More Information</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="more-info">
+            <form id="form" action="index.html" method="post">
+                <h1>Request More Information</h1>
+
+                <div id="degree-div">
+                    <label>What degree type would you like?*</label>
+                    <select id="degree" class="drop-down" name="selectDegree" required>
+                        <option id="select" value="select">Select</option>
+                        <option value="ct">Certificate</option>
+                        <option value="as">Associate</option>
+                        <option value="ba">Bachelor's</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div id="study-div">
+                    <label for="study">What would you like to study?*</label>
+                    <select id="study" class="drop-down" required disabled>
+                        <option value="select-program">Select degree type above</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div id="name-div">
+                    <label for="name">First Name*</label>
+                    <label id="sur-label" for="surname">Last Name*</label>
+                    <br>
+                    <input type="text" id="name" class="short" name="user_first" required>
+                    <input type="text" id="surname" class="surname short" name="user_last" required>
+                    <span>Invalid input.</span>
+                </div>
+
+                <div id="contact-information">
+                    <label for="mail">Email*</label>
+                    <input type="email" id="mail" name="user_email" required>
+                    <span>Invalid input.</span>
+                    <br>
+                    <label for="telephone">Telephone*</label>
+                    <br>
+                    <input type="tel" id="telephone" name="user_phone" required>
+                    <span>Invalid input.</span>
+                    <br>
+                    <label for="address">Address*</label>
+                    <a id="address-link" href="https://www.google.com/maps" target="_blank">Apt., P.O. box, or don't see your address?</a>
+                    <input type="text" id="address" name="user_address" placeholder="Enter a location" required>
+                    <span>Invalid input.</span>
+                </div>
+
+                <button type="submit" id="more">Tell Me More</button>
+
+                <br>
+
+                <small>By submitting contact information through this form, I agree that College University
+                and its affiliates may call and/or text me about its offerings by any phone number I have
+                provided and may provide in the future, including any wireless number, using automated
+                technology.
+                <br>
+                <br>
+                Message and data rates may apply. For additional information, text HELP to 99999 or 55555.
+                You may opt-out at any time by sending STOP to 99999 or 55555. Visit for <a href="#" target="_blank">Terms &amp; Conditions</a>
+                 and <a href="#" target="_blank">Privacy Policy</a>.
+                </small>
+
+                <hr class="hr-text" data-content="OR">
+            </form>
+                <a href="#" target="_blank"><button id="apply">Apply Now</button></a>
+        </div>
+    </main>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

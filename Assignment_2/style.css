@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+#more-info {
+    position: relative;
+    width: 350px;
+    height: 775px;
+    background-color: white;
+    padding: 20px;
+}
+
+html { 
+    background: url(background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+button {
+    height: 60px;
+    color: white;
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+}
+
+input:after {
+    border: red 2px;
+}
+
+select {
+    width: 100%;
+    height: 30px;
+}
+
+.short {
+    width: 161px;
+}
+
+
+#apply {
+    background-color: #00AA70;
+}
+
+#more {
+    background-color: #2773CB;
+}
+
+small {
+    color: gray;
+}
+
+:disabled {
+    background-color: rgb(218, 218, 221);
+}
+
+#surname {
+    float: right;
+}
+
+#sur-label {
+    float: right;
+    margin-right: 100px;
+}
+
+#address-link {
+    float: right;
+}
+
+#telephone {
+    width: 50%;
+}
+
+hr {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:visited {
+    color: blue;
+}
+
+span {
+    border-radius: 5px;
+    display: none;
+    font-size: 1.3em;
+    text-align: center;
+    float: unset;
+    background: rgb(184, 57, 57);
+    top: 25px;
+    width: 120px;
+    padding: 7px 10px;
+    margin: inherit;
+    color: #fff;
+    z-index: 1;;
+  }
+
+  span:after {
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    float: unset;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-right-color: rgb(184, 57, 57);
+    border-width: 8px;
+    margin-top: -8px;
+    margin: inherit;
+    z-index: 1;
+  }
+
+  #invalid-span {
+      margin-right: 0px;
+      margin-left: 0px;
+  }
